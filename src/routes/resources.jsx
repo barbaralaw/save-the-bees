@@ -1,8 +1,12 @@
+import busy_bees from "../assets/busy_bees.jpg"
+
 export const Resources = () => {
   return (
-    <main>
+    <div style={{ display: "flex", gap: "24px" }}>
+<main >
       <h1>Resources</h1>
       <section>
+        <p>During the research phase of the project we found a lot of cool sites with information about bees and other fun stuff. Check with a grownup before visiting these links as they go to other websites.</p>
         <h2>Learn More About Bees</h2>
         <ul>
             <li><a href="https://kids.nationalgeographic.com/animals/invertebrates/facts/honeybee" target="_blank">National Geographic Kids</a></li>
@@ -25,6 +29,12 @@ export const Resources = () => {
             <li><a href="https://www.greatsunflower.org/" target="_blank">The Great Sunflower Project</a></li>
         </ul>
       </section>
+      
     </main>
+    <div id="beeHome">
+        <img style={{ maxWidth: "100%", borderRadius: "12px" }} src={busy_bees} />
+      </div>
+    </div>
+    
   );
 };
