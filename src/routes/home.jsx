@@ -25,7 +25,7 @@ export const Home = () => {
             <li><b>Did you know that bees have been disappearing?</b> It's true! By some estimates, 9 out of every 10 bees in some areas have completely disappeared in the last 10 years. It's called Bee Colony Collapse and has a lot of scientists worried.</li>
             <li><b>Guess how many plants bees pollinate!</b> Bees pollinate 80% of all flowering plants throughout the world, including many kinds of fruits and vegetables. Plants have to be pollinated in order to keep growing, and without bees not enough will grow.</li>
             <li><b>There are so many kinds of bees!</b> Big fuzzy honey bees might be the first thing people think of, but there are actually over 20,000 species of bees in the world. In California there are over 1600 kinds bees that are native to the area!</li>
-            <li><b>Aren't bees mean and sting people?</b> If you believe this, you're not alone, but it's not true! Bees generally only sting as an final form of self-defense. If we don't bother them, they aren't bothered with us.</li>
+            <li><b>Aren't bees mean and sting people?</b> If you believe this, you're not alone, but it's not true! Bees generally only sting as a final form of self-defense. If we don't bother them, they aren't bothered with us.</li>
             <li><b>How can I help?</b> We can all help a little bit at a time. Plant flowering plants, even better if they're native to your area and pollinator friendly! Don't swat at bees when you see them. Spread the word about what amazing bugs they are so others start to help too!</li>
           </ul>
 
