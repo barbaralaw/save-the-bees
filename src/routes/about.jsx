@@ -1,7 +1,9 @@
 import working from "../assets/working.jpg"
+import packets from "../assets/packets.jpg"
 
 export const About = () => {
   return (
+    <>
     <div id="about" >
         <div id="workingPic"><img  style={{ maxWidth: "100%", borderRadius: "12px" }}src={working} /></div>
     <div>
@@ -26,6 +28,9 @@ export const About = () => {
       <p>Everything you see on this site has either been carefully written, created, or found by Archer or mom. <b>We hope you like it!</b></p>
     </div>
     </div>
+    <div id="workingPic"><img  style={{ maxWidth: "100%", borderRadius: "12px" }}src={packets} /></div>
+    </>
+    
 
   );
 };
