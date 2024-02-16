@@ -207,7 +207,7 @@ const PuzzleGame = () => {
   };
 
   return (
-    <div>
+    <div className="game-container">
       {isWin ? (
         <>
           <Winner moves={moveCount} />
@@ -215,8 +215,11 @@ const PuzzleGame = () => {
         </>
       ) : (
         <>
+          <div>
           <button onClick={() => shuffleGrid()}>Shuffle</button>
           <button onClick={() => resetGame()}>New Game</button>
+          </div>
+          
           <GameBoard
             onMove={(arrInd, valInd) => handleMove(arrInd, valInd)}
             grid={grid}

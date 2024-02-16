@@ -16,31 +16,43 @@ export async function loader() {
   return { contacts };
 }
 
+
+
+
 export default function Root() {
   const navigate = useNavigate()
+
   return (
     <>
       <div id="sidebar">
 
         {/* <button onClick={() => navigate("/")}> */}
-        <div style={{height: '100px', border: 'none', marginTop: '20px'}} onClick={()=>{navigate("/")}}>
+        <div className="logo" onClick={()=>{navigate("/")}}>
         <BeeLogo />
         </div>
         
         {/* </button> */}
-        <nav>
+
+        <nav className={'navigation'}>
           <ul>
             <li>
-              <Link to={`resources`}>Learn More</Link>
+              <Link to={``}>Home</Link>
             </li>
             <li>
-              <Link to={`puzzle`}>Puzzle Game</Link>
+              <Link to={`resources`}>Learn</Link>
             </li>
             <li>
+              <Link to={`puzzle`}>Play</Link>
+            </li>
+            {/* <li>
               <Link to={`quiz`}>Bee Quiz</Link>
+            </li> */}
+            <li>
+              <Link to={`about`}>About</Link>
             </li>
           </ul>
         </nav>
+
       </div>
       <div id="detail">
         {/* <div style={{ display: "flex", marginBottom: '36px' }}>

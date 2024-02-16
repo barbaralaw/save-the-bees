@@ -11,6 +11,7 @@ import { BeeQuiz } from "./routes/quiz";
 import { Resources } from "./routes/resources";
 import { Home } from "./routes/home"
 import { Puzzle } from "./routes/puzzle"
+import { About} from "./routes/about"
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: "resources",
         element: <Resources />,
       },
+      {
+        path: "about",
+        element: <About />
+      }
     ],
   },
 ]);
