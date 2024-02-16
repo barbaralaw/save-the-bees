@@ -44,6 +44,9 @@ export default function Root() {
             <li>
               <Link to={`puzzle`}>Play</Link>
             </li>
+            <li>
+              <Link to={`coloring`}>Color</Link>
+            </li>
             {/* <li>
               <Link to={`quiz`}>Bee Quiz</Link>
             </li> */}

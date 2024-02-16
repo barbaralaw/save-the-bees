@@ -46,7 +46,8 @@ const GameBoard = (props) => {
             <div
               className="gameSquare"
               onClick={() => {
-                return props.onMove(arrInd, valInd);
+console.log(!props.isPlaying)
+                return !props.isPlaying ? null : props.onMove(arrInd, valInd);
               }}
             >
               <img src={val} alt={`Tile ${valInd + 1}`} id={val} />
@@ -61,6 +62,7 @@ const GameBoard = (props) => {
 const PuzzleGame = () => {
   const [grid, setGrid] = useState([...gridWithBlank].map((x) => [...x]));
   const [isWin, setIsWin] = React.useState(false);
+  const [isPlaying, setIsPlaying] = React.useState(false);
   const [moveCount, setMoveCount] = React.useState(0);
 
   const blankSubArr = grid.findIndex((x) => x.includes(blankUrl));
@@ -136,6 +138,7 @@ const PuzzleGame = () => {
   /* Randomize array in-place using Durstenfeld shuffle algorithm */
   const shuffleGrid = () => {
     setIsWin(false);
+    setIsPlaying(true)
     const tempFlatGrid = [...grid].map((x) => [...x]).flat();
 
     for (let i = tempFlatGrid.length - 1; i > 0; i--) {
@@ -156,6 +159,7 @@ const PuzzleGame = () => {
   const resetGame = () => {
     setGrid([...gridWithBlank].map((x) => [...x]));
     setIsWin(false);
+    setIsPlaying(false)
     setMoveCount(0);
   };
 
@@ -216,11 +220,12 @@ const PuzzleGame = () => {
       ) : (
         <>
           <div style={{marginBottom: '16px'}}>
-          <button onClick={() => shuffleGrid()}>Shuffle</button>
-          <button onClick={() => resetGame()}>New Game</button>
+          <button onClick={() => shuffleGrid()}>Shuffle & START!</button>
+          <button onClick={() => resetGame()}>Solve</button>
           </div>
           
           <GameBoard
+          isPlaying={isPlaying}
             onMove={(arrInd, valInd) => handleMove(arrInd, valInd)}
             grid={grid}
           />
