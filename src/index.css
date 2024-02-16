@@ -292,6 +292,28 @@ i {
    margin-top: 42px;
 }
 
+#workingPic {
+  max-width: 35%;
+   margin-top: 42px;
+}
+
+#about {
+  display: flex;
+   gap: 24px;
+}
+
+#quiz {
+  display: flex;
+  gap: 8px;
+}
+label {
+  font-size: 18px;
+}
+
+#coloringPages img {
+  max-width: 50%;
+}
+
 @media (max-width: 700px) {
   #sidebar nav {
     padding: 0;
@@ -335,5 +357,14 @@ i {
   }
   #beeHome {
     display: none;
+  }
+  #about {
+    flex-direction:column-reverse;
+  }
+  #workingPic {
+    max-width: 100%;
+  }
+  #coloringPages img {
+    max-width: 100%;
   }
 }

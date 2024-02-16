@@ -12,6 +12,7 @@ import { Resources } from "./routes/resources";
 import { Home } from "./routes/home"
 import { Puzzle } from "./routes/puzzle"
 import { About} from "./routes/about"
+import { Coloring} from "./routes/coloring"
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />
+      },
+      {
+        path: "coloring",
+        element: <Coloring />
       }
     ],
   },

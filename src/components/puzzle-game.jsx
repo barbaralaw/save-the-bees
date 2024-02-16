@@ -215,7 +215,7 @@ const PuzzleGame = () => {
         </>
       ) : (
         <>
-          <div>
+          <div style={{marginBottom: '16px'}}>
           <button onClick={() => shuffleGrid()}>Shuffle</button>
           <button onClick={() => resetGame()}>New Game</button>
           </div>

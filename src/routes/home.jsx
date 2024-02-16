@@ -6,7 +6,10 @@ export const Home = () => {
     <div style={{ display: "flex", gap: "24px" }}>
       <div>
         <div>
+        <h2 style={{color:'#9d5228ff'}}><b>~~Hey! Check back later this weekend for more content, we're almost ready to share more games and pages! We'd love to see you back!~~</b></h2>
           <h1>Let's Save the Bees!</h1>
+
+          
 
           <p>
             Hey there, welcome! My name is Archer, and I'm on a mission to save
