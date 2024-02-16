@@ -52,8 +52,11 @@ import coloring_51 from "../assets/coloring/coloring_51.png";
 import coloring_52 from "../assets/coloring/coloring_52.png";
 import coloring_53 from "../assets/coloring/coloring_53.png";
 import coloring_54 from "../assets/coloring/coloring_54.png";
+import { useState} from 'react'
 
 export const Coloring = () => {
+    const [seeSecond, setSeeSecond] = useState(false)
+    const [seeThird, setSeeThird] = useState(false)
   return (
     <div>
       <h1>Coloring Pages</h1>
@@ -86,7 +89,10 @@ export const Coloring = () => {
         <img src={coloring_16} />
         <img src={coloring_17} />
         <img src={coloring_18} />
-        <img src={coloring_19} />
+        {!seeSecond && (<div><button onClick={()=>setSeeSecond(true)}>Load More...</button></div>)}
+        
+        {seeSecond && (<div>
+            <img src={coloring_19} />
         <img src={coloring_20} />
         <img src={coloring_21} />
         <img src={coloring_22} />
@@ -104,7 +110,12 @@ export const Coloring = () => {
         <img src={coloring_34} />
         <img src={coloring_35} />
         <img src={coloring_36} />
-        <img src={coloring_37} />
+        {!seeThird && (<div><button onClick={()=>setSeeThird(true)}>Load More...</button></div>)}
+        </div>
+        )}
+        {seeThird && (
+            <div>
+<img src={coloring_37} />
         <img src={coloring_38} />
         <img src={coloring_39} />
         <img src={coloring_40} />
@@ -122,6 +133,9 @@ export const Coloring = () => {
         <img src={coloring_52} />
         <img src={coloring_53} />
         <img src={coloring_54} />
+                </div>
+        )}
+        
       </div>
     </div>
   );
