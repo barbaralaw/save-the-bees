@@ -288,7 +288,7 @@ i {
 
 .gameSquare {
   flex-basis: 33.3333333%;
-  max-width: 140px;
+  max-height: 140px;
 }
 
 #beeHome {
