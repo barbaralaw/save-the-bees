@@ -286,12 +286,12 @@ i {
   }
 }
 
-/* .gameSquare {
+.gameSquare {
   flex-basis: 33.3333333%;
-  max-height: 140px;
+  /* max-height: 140px; */
 }
 
-.gameSquare img {
+/* .gameSquare img {
   max-height: 140px;
 } */
 
