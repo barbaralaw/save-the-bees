@@ -273,6 +273,7 @@ i {
 #gameBoard {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   width: 80vw;
   width: min(60%,80vh, 800px);
   border: 20px solid #22140cff;
