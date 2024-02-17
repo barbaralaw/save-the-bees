@@ -291,6 +291,10 @@ i {
   max-height: 140px;
 }
 
+.gameSquare img {
+  max-height: 140px;
+}
+
 #beeHome {
   max-width: 35%;
    margin-top: 42px;
